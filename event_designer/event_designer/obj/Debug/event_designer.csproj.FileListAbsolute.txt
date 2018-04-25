@@ -1,0 +1,5 @@
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\bin\Debug\event_designer.exe.config
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache

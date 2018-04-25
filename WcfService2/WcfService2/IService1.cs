@@ -44,18 +44,31 @@ namespace WcfService2
             get { return stringValue; }
             set { stringValue = value; }
         }
-        //void Resetassword();
-        //void AddEvent(Event e);
-        //void Conform(bool var);
-        //void CancelEvent();
-        //Event Search(int eventcode);
-        //void AddUser(Userdl u);
-        //void DeleteUser(String username);
-        //void DeleteUser(int usercode);
-        //List<User> SearchAllUser();
-        //User Searchuser(string Username);
-        //void DellImg(int code);
-        //void AddImg(Image img);
+        /* [OperationContract]
+        void Resetassword();
+        [OperationContract]
+        void AddEvent(Event e);
+        [OperationContract]
+        void Conform(bool var);
+        [OperationContract]
+        void CancelEvent();
+        [OperationContract]
+        Event Search(int eventcode);*/
+        [OperationContract]
+        void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata);
+       /*[OperationContract]
+        void DeleteUser(string username);
+        [OperationContract]
+        void DeleteUser(int usercode);
+        [OperationContract]
+        List<User> SearchAllUser();
+        [OperationContract]
+        User Searchuser(string Username);
+       [OperationContract]
+        void DellImg(int code);
+        [OperationContract]
+        void AddImg(Image img);
+        */
         
     }
 }
