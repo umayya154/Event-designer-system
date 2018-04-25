@@ -56,9 +56,9 @@ namespace WcfService2
             get { return area; }
             set { area = value; }
         }
-        private DateTime date;
+        private string  date;
 
-        public DateTime Date
+        public string  Date
         {
             get { return date; }
             set { date = value; }
@@ -84,7 +84,7 @@ namespace WcfService2
             get { return accountname; }
             set { accountname = value; }
         }
-        void Resetassword();
+        //void Resetassword(string pass);
 
     }
 }

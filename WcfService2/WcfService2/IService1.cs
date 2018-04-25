@@ -44,18 +44,18 @@ namespace WcfService2
             get { return stringValue; }
             set { stringValue = value; }
         }
-        void Resetassword();
-        void AddEvent(Event e);
-        void Conform(bool var);
-        void CancelEvent();
-        Event Search(int eventcode);
-        void AddUser(Userdl u);
-        void DeleteUser(String username);
-        void DeleteUser(int usercode);
-        List<User> SearchAllUser();
-        User Searchuser(string Username);
-        void DellImg(int code);
-        void AddImg(Image img);
+        //void Resetassword();
+        //void AddEvent(Event e);
+        //void Conform(bool var);
+        //void CancelEvent();
+        //Event Search(int eventcode);
+        //void AddUser(Userdl u);
+        //void DeleteUser(String username);
+        //void DeleteUser(int usercode);
+        //List<User> SearchAllUser();
+        //User Searchuser(string Username);
+        //void DellImg(int code);
+        //void AddImg(Image img);
         
     }
 }
