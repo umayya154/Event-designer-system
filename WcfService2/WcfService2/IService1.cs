@@ -56,6 +56,8 @@ namespace WcfService2
         Event Search(int eventcode);*/
         [OperationContract]
         void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata);
+        [OperationContract]
+        bool isvalid(string uname, string password);
        /*[OperationContract]
         void DeleteUser(string username);
         [OperationContract]

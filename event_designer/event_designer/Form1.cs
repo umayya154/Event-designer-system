@@ -53,5 +53,10 @@ namespace event_designer
             this.Hide();
             m.Show();
         }
+
+        private void fmregistration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

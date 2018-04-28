@@ -345,6 +345,7 @@
             this.Name = "fmregistration";
             this.Text = "Registration";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Load += new System.EventHandler(this.fmregistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

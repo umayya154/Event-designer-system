@@ -12,6 +12,12 @@ namespace WcfService2
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        public bool isvalid(string uname, string password)
+        {
+            Userdl u = new Userdl();
+            bool found = u.isvalid(uname, password);
+            return found;
+        }
         public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata)
         {
             Userdl u = new Userdl();

@@ -3,3 +3,12 @@ c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designe
 c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
 c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
 c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe.config
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csprojResolveAssemblyReference.cache
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form2.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form3.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserControl1.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmmain.resources

@@ -9,6 +9,19 @@ namespace WcfService2
     {
         public static List<User> users = new List<User>();
         //public User Searchuser(string Username);
+        public bool isvalid(string uname, string password)
+        {
+            bool isFound = false;
+            foreach (User u in Userdl.users)
+            {
+                if ((u.Username = uname) && (u.Password == password))
+                {
+                    isFound = true;
+                }
+            
+            }
+            return isFound;
+        }
        public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata)
         {
             User u = new User();

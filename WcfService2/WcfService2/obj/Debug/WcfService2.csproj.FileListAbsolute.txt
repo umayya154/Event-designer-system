@@ -3,3 +3,6 @@ D:\ayesha 1st semestr\visual studio work\WcfService2\WcfService2\bin\WcfService2
 D:\ayesha 1st semestr\visual studio work\WcfService2\WcfService2\obj\Debug\WcfService2.dll
 D:\ayesha 1st semestr\visual studio work\WcfService2\WcfService2\obj\Debug\WcfService2.pdb
 D:\ayesha 1st semestr\visual studio work\WcfService2\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\Alvina\Desktop\Event-designer-system\WcfService2\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\Alvina\Desktop\Event-designer-system\WcfService2\WcfService2\obj\Debug\WcfService2.dll
+C:\Users\Alvina\Desktop\Event-designer-system\WcfService2\WcfService2\obj\Debug\WcfService2.pdb
