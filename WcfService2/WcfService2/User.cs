@@ -63,9 +63,9 @@ namespace WcfService2
             get { return date; }
             set { date = value; }
         }
-        private int usercode;
+        private string usercode;
 
-        public int Usercode
+        public string Usercode
         {
             get { return usercode; }
             set { usercode = value; }

@@ -36,9 +36,9 @@ namespace event_designer
         {
             localhost.Service1 service = new localhost.Service1();
             string cata = comboBox1.Text;
-            int code = int.Parse(txtcode.Text);
+            string code = txtcode.Text;
             Image img = pictureBox1.Image;
-           // service.AddImg(cata, code, img);
+            //service.AddImg(cata, code, img);
             comboBox1.Text = "";
             pictureBox1.Image = event_designer.Properties.Resources.images;
             MessageBox.Show("saved");

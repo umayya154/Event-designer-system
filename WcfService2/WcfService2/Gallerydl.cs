@@ -10,7 +10,7 @@ namespace WcfService2
     {
        public static List<gallery> users = new List<gallery>();
        //void DellImg(int code);
-       public void AddImg(string cata, int code, Image img)
+       public void AddImg(string cata, string code, Image img)
        {
            gallery g = new gallery();
            g.Imagecode = code;

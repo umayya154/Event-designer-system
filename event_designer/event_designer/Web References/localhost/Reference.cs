@@ -94,7 +94,7 @@ namespace event_designer.localhost {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void AddUser([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string upassword, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uemail, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ucontact, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uarea, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uques, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uans, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uacname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uacno, int ucode, [System.Xml.Serialization.XmlIgnoreAttribute()] bool ucodeSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string udata) {
+        public void AddUser([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string upassword, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uemail, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ucontact, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uarea, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uques, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uans, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uacname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uacno, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ucode, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string udata) {
             this.Invoke("AddUser", new object[] {
                         uname,
                         upassword,
@@ -106,17 +106,16 @@ namespace event_designer.localhost {
                         uacname,
                         uacno,
                         ucode,
-                        ucodeSpecified,
                         udata});
         }
         
         /// <remarks/>
-        public void AddUserAsync(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, bool ucodeSpecified, string udata) {
-            this.AddUserAsync(uname, upassword, uemail, ucontact, uarea, uques, uans, uacname, uacno, ucode, ucodeSpecified, udata, null);
+        public void AddUserAsync(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata) {
+            this.AddUserAsync(uname, upassword, uemail, ucontact, uarea, uques, uans, uacname, uacno, ucode, udata, null);
         }
         
         /// <remarks/>
-        public void AddUserAsync(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, bool ucodeSpecified, string udata, object userState) {
+        public void AddUserAsync(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata, object userState) {
             if ((this.AddUserOperationCompleted == null)) {
                 this.AddUserOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddUserOperationCompleted);
             }
@@ -131,7 +130,6 @@ namespace event_designer.localhost {
                         uacname,
                         uacno,
                         ucode,
-                        ucodeSpecified,
                         udata}, this.AddUserOperationCompleted, userState);
         }
         
@@ -176,28 +174,26 @@ namespace event_designer.localhost {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddImg", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void AddImg([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string cata, int code, [System.Xml.Serialization.XmlIgnoreAttribute()] bool codeSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Image img) {
+        public void AddImg([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string cata, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string code, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Image img) {
             this.Invoke("AddImg", new object[] {
                         cata,
                         code,
-                        codeSpecified,
                         img});
         }
         
         /// <remarks/>
-        public void AddImgAsync(string cata, int code, bool codeSpecified, Image img) {
-            this.AddImgAsync(cata, code, codeSpecified, img, null);
+        public void AddImgAsync(string cata, string code, Image img) {
+            this.AddImgAsync(cata, code, img, null);
         }
         
         /// <remarks/>
-        public void AddImgAsync(string cata, int code, bool codeSpecified, Image img, object userState) {
+        public void AddImgAsync(string cata, string code, Image img, object userState) {
             if ((this.AddImgOperationCompleted == null)) {
                 this.AddImgOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddImgOperationCompleted);
             }
             this.InvokeAsync("AddImg", new object[] {
                         cata,
                         code,
-                        codeSpecified,
                         img}, this.AddImgOperationCompleted, userState);
         }
         

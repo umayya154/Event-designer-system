@@ -24,7 +24,7 @@ namespace WcfService2
        [OperationContract]
        Event Search(int eventcode);*/
         [OperationContract]
-        void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata);
+        void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata);
         [OperationContract]
         bool isvalid(string uname, string password);
         /*[OperationContract]
@@ -38,7 +38,7 @@ namespace WcfService2
         [OperationContract]
          void DellImg(int code);*/
          [OperationContract]
-         void AddImg(string cata , int code, Image img);
+         void AddImg(string cata , string code, Image img);
         
         [OperationContract]
         string GetData(int value);

@@ -22,20 +22,21 @@ namespace event_designer
         {
             localhost.Service1 service = new localhost.Service1();
             string name = txtname.Text;
-            string passwd = txtpassword.Text;
-            string email = txtemail.Text;
             string cont = txtcontact.Text;
+            string email = txtemail.Text;
+            string passwd = txtpassword.Text;
+            string area = txtarea.Text;
+            string acno = txtaccountno.Text;
+            string acname = txtaccountname.Text;
             string ques = cmbquestion.Text;
             string ans = txtanswer.Text;
-            string area = txtarea.Text;
-            string acname = txtaccountname.Text;
-            string acno = txtaccountno.Text;
+           
             Random r = new Random();
             int code = r.Next(200, 999);
             txtcode.Text = (code).ToString();
             txtdate.Text = DateTime.Now.ToLongDateString();
             //void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata)
-            //service.AddUser(name, passwd, email, cont, area, ques, ans, acname, acno, code, txtdate.Text);
+           service.AddUser(name, passwd, email, cont, area, ques, ans, acname, acno, txtcode.Text, txtdate.Text);
             txtpassword.Text = "";
             MessageBox.Show("user has been registred");
             txtcode.Text = "";

@@ -19,7 +19,7 @@ namespace WcfService2
             bool found = u.isvalid(uname, password);
             return found;
         }
-        public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata)
+        public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata)
         {
             Userdl u = new Userdl();
             u.AddUser(uname, upassword, uemail, ucontact, uarea, uques, uans, uacname, uacno, ucode, udata);
@@ -34,9 +34,10 @@ namespace WcfService2
         //public List<User> SearchAllUser(){}
         //public User Searchuser(string Username){}
         //public void DellImg(int code) { }
-        public void AddImg(string cata, int code, Image img) 
+        public void AddImg(string cata, string code,Image img) 
         {
             Gallerydl g = new Gallerydl();
+           
             g.AddImg(cata, code, img);
         }
  

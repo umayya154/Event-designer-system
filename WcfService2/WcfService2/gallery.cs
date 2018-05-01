@@ -8,9 +8,9 @@ namespace WcfService2
 {
     public class gallery
     {
-        private int imagecode;
+        private string imagecode;
 
-        public int Imagecode
+        public string Imagecode
         {
             get { return imagecode; }
             set { imagecode = value; }

@@ -22,7 +22,7 @@ namespace WcfService2
             }
             return isFound;
         }
-       public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata)
+       public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata)
         {
             User u = new User();
             u.Username = uname;

@@ -14,7 +14,7 @@
         <xs:element minOccurs="0" name="uans" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="uacname" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="uacno" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="ucode" type="xs:int" />
+        <xs:element minOccurs="0" name="ucode" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="udata" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -43,7 +43,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="cata" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="code" type="xs:int" />
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
         <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="img" nillable="true" type="q1:Image" />
       </xs:sequence>
     </xs:complexType>
