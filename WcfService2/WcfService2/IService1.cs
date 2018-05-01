@@ -13,7 +13,33 @@ namespace WcfService2
     [ServiceContract]
     public interface IService1
     {
-
+        /* [OperationContract]
+       void Resetassword();
+       [OperationContract]
+       void AddEvent(Event e);
+       [OperationContract]
+       void Conform(bool var);
+       [OperationContract]
+       void CancelEvent();
+       [OperationContract]
+       Event Search(int eventcode);*/
+        [OperationContract]
+        void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata);
+        [OperationContract]
+        bool isvalid(string uname, string password);
+        /*[OperationContract]
+         void DeleteUser(string username);
+         [OperationContract]
+         void DeleteUser(int usercode);
+         [OperationContract]
+         List<User> SearchAllUser();
+         [OperationContract]
+         User Searchuser(string Username);
+        [OperationContract]
+         void DellImg(int code);*/
+         [OperationContract]
+         void AddImg(string cata , int code, Image img);
+        
         [OperationContract]
         string GetData(int value);
 
@@ -44,33 +70,7 @@ namespace WcfService2
             get { return stringValue; }
             set { stringValue = value; }
         }
-        /* [OperationContract]
-        void Resetassword();
-        [OperationContract]
-        void AddEvent(Event e);
-        [OperationContract]
-        void Conform(bool var);
-        [OperationContract]
-        void CancelEvent();
-        [OperationContract]
-        Event Search(int eventcode);*/
-        [OperationContract]
-        void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata);
-        [OperationContract]
-        bool isvalid(string uname, string password);
-       /*[OperationContract]
-        void DeleteUser(string username);
-        [OperationContract]
-        void DeleteUser(int usercode);
-        [OperationContract]
-        List<User> SearchAllUser();
-        [OperationContract]
-        User Searchuser(string Username);
-       [OperationContract]
-        void DellImg(int code);
-        [OperationContract]
-        void AddImg(Image img);
-        */
+       
         
     }
 }

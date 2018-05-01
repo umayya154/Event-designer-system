@@ -36,7 +36,7 @@ namespace event_designer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            localhost.Server1 server = new localhost.Server1();
+            localhost.Service1 server = new localhost.Service1();
             bool isvaliduser;
             bool isvalidPassword;
             server.isvalid(textBox1.Text, textBox2.Text, out isvalidPassword, out isvaliduser);

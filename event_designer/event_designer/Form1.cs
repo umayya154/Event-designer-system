@@ -20,7 +20,7 @@ namespace event_designer
 
         private void btnsubmit_Click(object sender, EventArgs e)
         {
-            localhost.Service1 ser = new localhost.Service1();
+            localhost.Service1 service = new localhost.Service1();
             string name = txtname.Text;
             string passwd = txtpassword.Text;
             string email = txtemail.Text;
@@ -34,7 +34,8 @@ namespace event_designer
             int code = r.Next(200, 999);
             txtcode.Text = (code).ToString();
             txtdate.Text = DateTime.Now.ToLongDateString();
-            ser.AddUser(name, passwd, email, cont, area, ques, ans, acname, acno, code, txtdate.Text);
+            //void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, int ucode, string udata)
+            //service.AddUser(name, passwd, email, cont, area, ques, ans, acname, acno, code, txtdate.Text);
             txtpassword.Text = "";
             MessageBox.Show("user has been registred");
             txtcode.Text = "";
@@ -55,6 +56,11 @@ namespace event_designer
         }
 
         private void fmregistration_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcode_TextChanged(object sender, EventArgs e)
         {
 
         }

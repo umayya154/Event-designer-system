@@ -51,5 +51,12 @@ namespace event_designer
             fm.Show();
 
         }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Gallery g = new Gallery();
+            this.Hide();
+            g.Show();
+        }
     }
 }

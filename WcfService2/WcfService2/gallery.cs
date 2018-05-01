@@ -8,20 +8,24 @@ namespace WcfService2
 {
     public class gallery
     {
-        private int Imagecode;
+        private int imagecode;
 
-        public int Imagecode1
+        public int Imagecode
         {
-            get { return Imagecode; }
-            set { Imagecode = value; }
+            get { return imagecode; }
+            set { imagecode = value; }
         }
-        private string ImgCategory;
 
-        public string ImgCategory1
+
+        private string imgCategory;
+
+        public string ImgCategory
         {
-            get { return ImgCategory; }
-            set { ImgCategory = value; }
+            get { return imgCategory; }
+            set { imgCategory = value; }
         }
+
+       
         private Image img;
 
         public Image Img

@@ -14,7 +14,7 @@ namespace WcfService2
             bool isFound = false;
             foreach (User u in Userdl.users)
             {
-                if ((u.Username = uname) && (u.Password == password))
+                if ((u.Username == uname) && (u.Password == password))
                 {
                     isFound = true;
                 }
