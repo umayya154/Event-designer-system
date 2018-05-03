@@ -30,7 +30,6 @@ namespace event_designer
             string acname = txtaccountname.Text;
             string ques = cmbquestion.Text;
             string ans = txtanswer.Text;
-           
             Random r = new Random();
             int code = r.Next(200, 999);
             txtcode.Text = (code).ToString();

@@ -40,7 +40,7 @@ namespace event_designer
             bool isvaliduser;
             bool isvalidPassword;
             server.isvalid(textBox1.Text, textBox2.Text, out isvalidPassword, out isvaliduser);
-            if (isvaliduser)
+            if (isvaliduser && isvalidPassword)
             {
                 MessageBox.Show("valid user");
 

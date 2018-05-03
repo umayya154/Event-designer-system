@@ -55,5 +55,13 @@ namespace event_designer
         {
 
         }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            comboBox1.Text = "";
+            txtcode.Text = "";
+            txtname.Text = "";
+            pictureBox1.Image = pictureBox1.Image = event_designer.Properties.Resources.images;
+        }
     }
 }

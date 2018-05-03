@@ -16,7 +16,7 @@ namespace event_designer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fmregistration());
+            Application.Run(new fmmain());
         }
     }
 }
