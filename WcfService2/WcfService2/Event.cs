@@ -14,16 +14,16 @@ namespace WcfService2
             get { return username; }
             set { username = value; }
         }
-        private DateTime dateofevent;
+        private string dateofevent;
 
-        public DateTime Dateofevent
+        public string Dateofevent
         {
             get { return dateofevent; }
             set { dateofevent = value; }
         }
-        private int days;
+        private string days;
 
-        public int Days
+        public string Days
         {
             get { return days; }
             set { days = value; }
@@ -35,16 +35,16 @@ namespace WcfService2
             get { return eventstatus; }
             set { eventstatus = value; }
         }
-        private int usercode;
+        private string usercode;
 
-        public int Usercode
+        public string Usercode
         {
             get { return usercode; }
             set { usercode = value; }
         }
-        private int eventcode;
+        private string eventcode;
 
-        public int Eventcode
+        public string Eventcode
         {
             get { return eventcode; }
             set { eventcode = value; }
@@ -70,9 +70,9 @@ namespace WcfService2
             get { return cancelreason; }
             set { cancelreason = value; }
         }
-        private int payment;
+        private string payment;
 
-        public int Payment
+        public string Payment
         {
             get { return payment; }
             set { payment = value; }
