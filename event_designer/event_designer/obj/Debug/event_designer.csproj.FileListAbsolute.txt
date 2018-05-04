@@ -26,3 +26,6 @@ C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\bin\De
 C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.pdb
 C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.exe
 C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.pdb
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe.config
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.exe
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.pdb
