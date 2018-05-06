@@ -35,18 +35,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::event_designer.Properties.Resources.eventtable;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(211, 202);
+            this.pictureBox1.Size = new System.Drawing.Size(442, 310);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackgroundImage = global::event_designer.Properties.Resources.download__3_;
+            this.ClientSize = new System.Drawing.Size(536, 319);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form5";
             this.Text = "Form5";
