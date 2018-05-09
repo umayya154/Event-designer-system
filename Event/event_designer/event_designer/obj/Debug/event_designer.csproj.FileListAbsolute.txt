@@ -1,0 +1,52 @@
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\bin\Debug\event_designer.exe.config
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
+c:\users\dell\documents\visual studio 2012\Projects\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe.config
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csprojResolveAssemblyReference.cache
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserControl1.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmmain.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe.config
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csprojResolveAssemblyReference.cache
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmlogin.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmmain.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Gallery.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserControl1.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserCreateGallery.resources
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.pdb
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.exe
+C:\Users\dell\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.pdb
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe.config
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.exe
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.pdb
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.pdb
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csprojResolveAssemblyReference.cache
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmregistration.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmlogin.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmmain.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Gallery.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Properties.Resources.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserControl1.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserCreateGallery.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form4.resources
+C:\Users\asim\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form5.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.exe
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.pdb
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.exe
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\bin\Debug\event_designer.pdb
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Cancel_Event.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.fmlogin.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form4.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form5.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Gallery.resources
+C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserCreateGallery.resources
