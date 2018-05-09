@@ -32,6 +32,9 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,7 +42,7 @@
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel3.Location = new System.Drawing.Point(267, 285);
+            this.linkLabel3.Location = new System.Drawing.Point(126, 285);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(63, 13);
             this.linkLabel3.TabIndex = 1;
@@ -53,7 +56,7 @@
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.linkLabel4.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel4.Location = new System.Drawing.Point(405, 285);
+            this.linkLabel4.Location = new System.Drawing.Point(248, 285);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(33, 13);
             this.linkLabel4.TabIndex = 2;
@@ -65,7 +68,7 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(94, 285);
+            this.linkLabel5.Location = new System.Drawing.Point(35, 285);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(39, 13);
             this.linkLabel5.TabIndex = 3;
@@ -83,10 +86,52 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.linkLabel6.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel6.Location = new System.Drawing.Point(539, 285);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(0, 13);
+            this.linkLabel6.TabIndex = 4;
+            this.linkLabel6.VisitedLinkColor = System.Drawing.Color.Lime;
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.linkLabel7.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel7.Location = new System.Drawing.Point(462, 285);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(71, 13);
+            this.linkLabel7.TabIndex = 5;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "Cancel Event";
+            this.linkLabel7.VisitedLinkColor = System.Drawing.Color.Lime;
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.linkLabel8.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel8.Location = new System.Drawing.Point(348, 285);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(63, 13);
+            this.linkLabel8.TabIndex = 6;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Book Event";
+            this.linkLabel8.VisitedLinkColor = System.Drawing.Color.Lime;
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
+            // 
             // fmmain
             // 
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(584, 307);
+            this.Controls.Add(this.linkLabel8);
+            this.Controls.Add(this.linkLabel7);
+            this.Controls.Add(this.linkLabel6);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
@@ -108,5 +153,8 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.LinkLabel linkLabel6;
+        private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.LinkLabel linkLabel8;
     }
 }

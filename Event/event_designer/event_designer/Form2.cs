@@ -43,7 +43,9 @@ namespace event_designer
             if (isvaliduser && isvalidPassword)
             {
                 MessageBox.Show("valid user");
-
+                Form4 fb = new Form4();
+                this.Hide();
+                fb.Show();
             }
             else
             {
@@ -51,9 +53,7 @@ namespace event_designer
             }
             textBox1.Text = "";
             textBox2.Text = "";
-            Form4 fb = new Form4();
-            this.Hide();
-            fb.Show();
+            
         }
 
         private void linkmain_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

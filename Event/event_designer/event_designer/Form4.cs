@@ -62,5 +62,19 @@ namespace event_designer
             this.Hide();
             b.Show();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UserCreateGallery u = new UserCreateGallery();
+            this.Hide();
+            u.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            fmmain f = new fmmain();
+            this.Hide();
+            f.Show();
+        }
     }
 }

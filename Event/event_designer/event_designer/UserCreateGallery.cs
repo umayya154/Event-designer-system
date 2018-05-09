@@ -39,11 +39,12 @@ namespace event_designer
             string code = txtcode.Text;
             Image img = pictureBox1.Image;
             //service.AddImg(cata, code, img);
-            comboBox1.Text = "";
-            pictureBox1.Image = event_designer.Properties.Resources.images;
+           
             MessageBox.Show("saved");
             UserControl1 ctl = new UserControl1(comboBox1.Text, txtcode.Text, pictureBox1.Image);
             flowLayoutPanel1.Controls.Add(ctl);
+            comboBox1.Text = "";
+            pictureBox1.Image = event_designer.Properties.Resources.images;
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -62,6 +63,13 @@ namespace event_designer
             txtcode.Text = "";
             txtname.Text = "";
             pictureBox1.Image = pictureBox1.Image = event_designer.Properties.Resources.images;
+        }
+
+        private void lnkbooking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form4 f = new Form4();
+            this.Hide();
+            f.Show();
         }
     }
 }

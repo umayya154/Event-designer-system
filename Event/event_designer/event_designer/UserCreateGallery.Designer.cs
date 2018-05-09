@@ -124,6 +124,7 @@
             this.lnkbooking.TabIndex = 9;
             this.lnkbooking.TabStop = true;
             this.lnkbooking.Text = "Back";
+            this.lnkbooking.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkbooking_LinkClicked);
             // 
             // txtcode
             // 

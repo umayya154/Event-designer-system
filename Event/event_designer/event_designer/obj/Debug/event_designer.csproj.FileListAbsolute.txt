@@ -50,3 +50,6 @@ C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\
 C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Form5.resources
 C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.Gallery.resources
 C:\Users\Alvina\Desktop\Event-designer-system\event_designer\event_designer\obj\Debug\event_designer.UserCreateGallery.resources
+C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\bin\Debug\event_designer.exe.config
+C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.exe
+C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.pdb

@@ -58,5 +58,19 @@ namespace event_designer
             this.Hide();
             g.Show();
         }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cancel_Event c = new Cancel_Event();
+            this.Hide();
+            c.Show();
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form4 f = new Form4();
+            this.Hide();
+            f.Show();
+        } 
     }
 }
