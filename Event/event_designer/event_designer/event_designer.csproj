@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Page.Designer.cs">
+      <DependentUpon>Admin Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adminlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin Page.resx">
+      <DependentUpon>Admin Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adminlogin.resx">
       <DependentUpon>Adminlogin.cs</DependentUpon>
     </EmbeddedResource>

@@ -40,6 +40,9 @@ namespace WcfService2
         }
         //public void DeleteUser(String username);
         //public void DeleteUser(int usercode);
-        //public List<User> SearchAllUser();
+       public List<User> SearchAllUser()
+       {
+           return Userdl.users;
+       }
     }
 }

@@ -19,7 +19,7 @@ namespace event_designer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*localhost.Service1 server = new localhost.Service1();
+            localhost.Service1 server = new localhost.Service1();
             bool is_validuser;
             bool is_validPassword;
             bool is_validcode;
