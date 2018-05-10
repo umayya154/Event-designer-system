@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.Designer.cs">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cancel Event.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,17 +76,17 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Book event.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Book event.Designer.cs">
+      <DependentUpon>Book event.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="event details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="event details.Designer.cs">
+      <DependentUpon>event details.cs</DependentUpon>
     </Compile>
     <Compile Include="Gallery.cs">
       <SubType>Form</SubType>
@@ -107,6 +113,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Adminlogin.resx">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cancel Event.resx">
       <DependentUpon>Cancel Event.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,11 +128,11 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Book event.resx">
+      <DependentUpon>Book event.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="event details.resx">
+      <DependentUpon>event details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gallery.resx">
       <DependentUpon>Gallery.cs</DependentUpon>

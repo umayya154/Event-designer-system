@@ -18,3 +18,8 @@ C:\Users\asim\Desktop\Event-designer-system\WcfService2\WcfService2\obj\Debug\Wc
 C:\Users\asim\Desktop\Event-designer-system\WcfService2\WcfService2\obj\Debug\WcfService2.pdb
 C:\Users\Alvina\Desktop\Event-designer-system\WcfService2\WcfService2\bin\WcfService2.dll
 C:\Users\Alvina\Desktop\Event-designer-system\WcfService2\WcfService2\bin\WcfService2.pdb
+C:\Users\asim\Desktop\Event-designer-system\Event\WcfService2\WcfService2\bin\WcfService2.dll
+C:\Users\asim\Desktop\Event-designer-system\Event\WcfService2\WcfService2\bin\WcfService2.pdb
+C:\Users\asim\Desktop\Event-designer-system\Event\WcfService2\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\asim\Desktop\Event-designer-system\Event\WcfService2\WcfService2\obj\Debug\WcfService2.dll
+C:\Users\asim\Desktop\Event-designer-system\Event\WcfService2\WcfService2\obj\Debug\WcfService2.pdb

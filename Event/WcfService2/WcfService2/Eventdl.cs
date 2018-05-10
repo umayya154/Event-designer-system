@@ -18,6 +18,7 @@ namespace WcfService2
             e.Location = location;
             e.Guestquantity = guestquantity;
             e.Payment = Payment;
+            users.Add(e);
         }
         //void Conform(bool var);
         public bool CancelEvent(string uname, string ucode, string udate, string ereason)

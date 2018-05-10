@@ -2,6 +2,22 @@
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:52757/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
   <xs:import schemaLocation="http://localhost:52757/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
+  <xs:element name="is_validAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="apassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="acode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_validAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_validAdminResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="AddUser">
     <xs:complexType>
       <xs:sequence>

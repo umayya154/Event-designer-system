@@ -21,5 +21,12 @@ namespace event_designer
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form4 h = new Form4();
+            this.Hide();
+            h.Show();
+        }
     }
 }
