@@ -19,11 +19,11 @@ namespace event_designer
 
         private void button1_Click(object sender, EventArgs e)
         {
-          /*  localhost.Service1 service = new localhost.Service1();
+            localhost.Service1 service = new localhost.Service1();
             BindingSource source = new BindingSource();
             service.SearchAllUser();
             source.DataSource = service.SearchAllUser();
-            dataGridView1.DataSource = source;*/
+            dataGridView1.DataSource = source;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,6 +43,9 @@ namespace event_designer
             if (dataGridView1.Columns[4].ToString() != "Cancel")
             {
                 dataGridView1.CurrentRow.Visible = false;
+
+
+
             }
         }
     }

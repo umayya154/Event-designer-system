@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/System.Drawing" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Drawing" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:52757/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:complexType name="Image">
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService2" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfUser">
     <xs:sequence>
-      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##local" processContents="skip" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
     </xs:sequence>
-    <xs:attribute ref="ser:FactoryType" />
   </xs:complexType>
-  <xs:element name="Image" nillable="true" type="tns:Image" />
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Accountname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Accountno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Answer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecretQs1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usercode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Event" nillable="true" type="tns:Event" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEvent" nillable="true" type="tns:ArrayOfEvent" />
+  <xs:complexType name="Event">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cancelreason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dateofevent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Days" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Eventcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Eventstatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Feedback" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guestquantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Payment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usercode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Event" nillable="true" type="tns:Event" />
+  <xs:complexType name="CompositeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BoolValue" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StringValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
 </xs:schema>

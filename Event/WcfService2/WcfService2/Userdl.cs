@@ -22,6 +22,19 @@ namespace WcfService2
             }
             return isFound;
         }
+       /* public bool is_validAdmin(string aname, string apassword, string acode)
+        {
+            bool isFound = false;
+            foreach (User b in Userdl.users)
+            {
+                if ((b.Username == aname) && (b.Password == apassword) &&(b.securitycode == acode))
+                {
+                    isFound = true;
+                }
+
+            }
+            return isFound;
+        }*/
        public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata)
         {
             User u = new User();

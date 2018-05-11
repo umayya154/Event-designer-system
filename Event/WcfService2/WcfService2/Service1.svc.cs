@@ -13,6 +13,12 @@ namespace WcfService2
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        public bool is_validAdmin(string aname, string apassword,string acode)
+        {
+           Admin u = new Admin();
+            bool found = u.is_validAdmin(aname, apassword, acode);
+            return found;
+        }
         public bool isvalid(string uname, string password)
         {
             Userdl u = new Userdl();
@@ -40,7 +46,10 @@ namespace WcfService2
         //public Event Search(int eventcode);
         //public  void DeleteUser(string username) { }
         // public  void DeleteUser(int usercode) { }
-        //public List<User> SearchAllUser(){}
+        public List<User> SearchAllUser(){
+            Userdl se = new Userdl();
+            return se.SearchAllUser();
+        }
         //public User Searchuser(string Username){}
         //public void DellImg(int code) { }
         public void AddImg(string cata, string code,Image img) 
