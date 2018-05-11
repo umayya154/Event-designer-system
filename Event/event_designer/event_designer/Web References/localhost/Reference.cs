@@ -23,21 +23,21 @@ namespace event_designer.localhost {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
     public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
-        private System.Threading.SendOrPostCallback is_validAdminOperationCompleted;
+        private System.Threading.SendOrPostCallback CancelEventOperationCompleted;
         
         private System.Threading.SendOrPostCallback AddUserOperationCompleted;
         
         private System.Threading.SendOrPostCallback isvalidOperationCompleted;
         
-        private System.Threading.SendOrPostCallback CancelEventOperationCompleted;
-        
         private System.Threading.SendOrPostCallback AddImgOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SearchAllOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
         
@@ -82,7 +82,7 @@ namespace event_designer.localhost {
         }
         
         /// <remarks/>
-        public event is_validAdminCompletedEventHandler is_validAdminCompleted;
+        public event CancelEventCompletedEventHandler CancelEventCompleted;
         
         /// <remarks/>
         public event AddUserCompletedEventHandler AddUserCompleted;
@@ -91,10 +91,10 @@ namespace event_designer.localhost {
         public event isvalidCompletedEventHandler isvalidCompleted;
         
         /// <remarks/>
-        public event CancelEventCompletedEventHandler CancelEventCompleted;
+        public event AddImgCompletedEventHandler AddImgCompleted;
         
         /// <remarks/>
-        public event AddImgCompletedEventHandler AddImgCompleted;
+        public event SearchAllCompletedEventHandler SearchAllCompleted;
         
         /// <remarks/>
         public event GetDataCompletedEventHandler GetDataCompleted;
@@ -103,36 +103,38 @@ namespace event_designer.localhost {
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_validAdmin", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void is_validAdmin([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string aname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string apassword, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string acode, out bool is_validAdminResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_validAdminResultSpecified) {
-            object[] results = this.Invoke("is_validAdmin", new object[] {
-                        aname,
-                        apassword,
-                        acode});
-            is_validAdminResult = ((bool)(results[0]));
-            is_validAdminResultSpecified = ((bool)(results[1]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/CancelEvent", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void CancelEvent([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ucode, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string udate, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ereason, out bool CancelEventResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool CancelEventResultSpecified) {
+            object[] results = this.Invoke("CancelEvent", new object[] {
+                        uname,
+                        ucode,
+                        udate,
+                        ereason});
+            CancelEventResult = ((bool)(results[0]));
+            CancelEventResultSpecified = ((bool)(results[1]));
         }
         
         /// <remarks/>
-        public void is_validAdminAsync(string aname, string apassword, string acode) {
-            this.is_validAdminAsync(aname, apassword, acode, null);
+        public void CancelEventAsync(string uname, string ucode, string udate, string ereason) {
+            this.CancelEventAsync(uname, ucode, udate, ereason, null);
         }
         
         /// <remarks/>
-        public void is_validAdminAsync(string aname, string apassword, string acode, object userState) {
-            if ((this.is_validAdminOperationCompleted == null)) {
-                this.is_validAdminOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_validAdminOperationCompleted);
+        public void CancelEventAsync(string uname, string ucode, string udate, string ereason, object userState) {
+            if ((this.CancelEventOperationCompleted == null)) {
+                this.CancelEventOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCancelEventOperationCompleted);
             }
-            this.InvokeAsync("is_validAdmin", new object[] {
-                        aname,
-                        apassword,
-                        acode}, this.is_validAdminOperationCompleted, userState);
+            this.InvokeAsync("CancelEvent", new object[] {
+                        uname,
+                        ucode,
+                        udate,
+                        ereason}, this.CancelEventOperationCompleted, userState);
         }
         
-        private void Onis_validAdminOperationCompleted(object arg) {
-            if ((this.is_validAdminCompleted != null)) {
+        private void OnCancelEventOperationCompleted(object arg) {
+            if ((this.CancelEventCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.is_validAdminCompleted(this, new is_validAdminCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.CancelEventCompleted(this, new CancelEventCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -217,42 +219,6 @@ namespace event_designer.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/CancelEvent", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void CancelEvent([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string uname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ucode, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string udate, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string ereason, out bool CancelEventResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool CancelEventResultSpecified) {
-            object[] results = this.Invoke("CancelEvent", new object[] {
-                        uname,
-                        ucode,
-                        udate,
-                        ereason});
-            CancelEventResult = ((bool)(results[0]));
-            CancelEventResultSpecified = ((bool)(results[1]));
-        }
-        
-        /// <remarks/>
-        public void CancelEventAsync(string uname, string ucode, string udate, string ereason) {
-            this.CancelEventAsync(uname, ucode, udate, ereason, null);
-        }
-        
-        /// <remarks/>
-        public void CancelEventAsync(string uname, string ucode, string udate, string ereason, object userState) {
-            if ((this.CancelEventOperationCompleted == null)) {
-                this.CancelEventOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCancelEventOperationCompleted);
-            }
-            this.InvokeAsync("CancelEvent", new object[] {
-                        uname,
-                        ucode,
-                        udate,
-                        ereason}, this.CancelEventOperationCompleted, userState);
-        }
-        
-        private void OnCancelEventOperationCompleted(object arg) {
-            if ((this.CancelEventCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CancelEventCompleted(this, new CancelEventCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddImg", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void AddImg([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string cata, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string code, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Image img) {
             this.Invoke("AddImg", new object[] {
@@ -281,6 +247,35 @@ namespace event_designer.localhost {
             if ((this.AddImgCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.AddImgCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/SearchAll", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService2")]
+        public Event[] SearchAll() {
+            object[] results = this.Invoke("SearchAll", new object[0]);
+            return ((Event[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SearchAllAsync() {
+            this.SearchAllAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SearchAllAsync(object userState) {
+            if ((this.SearchAllOperationCompleted == null)) {
+                this.SearchAllOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSearchAllOperationCompleted);
+            }
+            this.InvokeAsync("SearchAll", new object[0], this.SearchAllOperationCompleted, userState);
+        }
+        
+        private void OnSearchAllOperationCompleted(object arg) {
+            if ((this.SearchAllCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SearchAllCompleted(this, new SearchAllCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -448,83 +443,163 @@ namespace event_designer.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
-    public delegate void is_validAdminCompletedEventHandler(object sender, is_validAdminCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class is_validAdminCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class Event {
         
-        private object[] results;
+        private string cancelreasonField;
         
-        internal is_validAdminCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
+        private string dateofeventField;
+        
+        private string daysField;
+        
+        private string eventcodeField;
+        
+        private string eventstatusField;
+        
+        private string feedbackField;
+        
+        private string guestquantityField;
+        
+        private string locationField;
+        
+        private string paymentField;
+        
+        private string usercodeField;
+        
+        private string usernameField;
         
         /// <remarks/>
-        public bool is_validAdminResult {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Cancelreason {
             get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
+                return this.cancelreasonField;
+            }
+            set {
+                this.cancelreasonField = value;
             }
         }
         
         /// <remarks/>
-        public bool is_validAdminResultSpecified {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Dateofevent {
             get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[1]));
+                return this.dateofeventField;
+            }
+            set {
+                this.dateofeventField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Days {
+            get {
+                return this.daysField;
+            }
+            set {
+                this.daysField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Eventcode {
+            get {
+                return this.eventcodeField;
+            }
+            set {
+                this.eventcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Eventstatus {
+            get {
+                return this.eventstatusField;
+            }
+            set {
+                this.eventstatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Feedback {
+            get {
+                return this.feedbackField;
+            }
+            set {
+                this.feedbackField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Guestquantity {
+            get {
+                return this.guestquantityField;
+            }
+            set {
+                this.guestquantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Payment {
+            get {
+                return this.paymentField;
+            }
+            set {
+                this.paymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Usercode {
+            get {
+                return this.usercodeField;
+            }
+            set {
+                this.usercodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Username {
+            get {
+                return this.usernameField;
+            }
+            set {
+                this.usernameField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
-    public delegate void AddUserCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
-    public delegate void isvalidCompletedEventHandler(object sender, isvalidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class isvalidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal isvalidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool isvalidResult {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public bool isvalidResultSpecified {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void CancelEventCompletedEventHandler(object sender, CancelEventCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CancelEventCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -554,15 +629,79 @@ namespace event_designer.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void AddUserCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void isvalidCompletedEventHandler(object sender, isvalidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class isvalidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal isvalidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool isvalidResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool isvalidResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void AddImgCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void SearchAllCompletedEventHandler(object sender, SearchAllCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SearchAllCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SearchAllCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Event[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Event[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataCompletedEventHandler(object sender, GetDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -584,11 +723,11 @@ namespace event_designer.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataUsingDataContractCompletedEventHandler(object sender, GetDataUsingDataContractCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataUsingDataContractCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

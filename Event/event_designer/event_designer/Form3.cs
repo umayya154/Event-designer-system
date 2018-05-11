@@ -71,6 +71,13 @@ namespace event_designer
             Form4 f = new Form4();
             this.Hide();
             f.Show();
+        }
+
+        private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Adminlogin l = new Adminlogin();
+            this.Hide();
+            l.Show();
         } 
     }
 }

@@ -8,7 +8,11 @@ namespace WcfService2
     public class Eventdl
     {
         public static List<Event> users = new List<Event>();
-         //List<Event> SearchAll ();
+        public List<Event> SearchAll()
+        {
+            return Eventdl.users;
+        }
+
         void AddEvent(string name, string dateofevent,string days, string usercode,string eventcode,string location,string guestquantity,string Payment){
             Event e = new Event();
             e.Dateofevent = dateofevent;

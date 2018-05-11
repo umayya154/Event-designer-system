@@ -24,6 +24,11 @@ namespace WcfService2
             Userdl u = new Userdl();
             u.AddUser(uname, upassword, uemail, ucontact, uarea, uques, uans, uacname, uacno, ucode, udata);
         }
+        public List<Event> SearchAll()
+        {
+            Eventdl ed = new Eventdl();
+            return ed.SearchAll();
+        }
         //public void Resetassword(string pass) { }
         // public void AddEvent(Event e) { }
         //public void Conform(bool var) { }

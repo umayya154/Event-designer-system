@@ -8,11 +8,11 @@
       <xsd:import schemaLocation="http://localhost:52757/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_is_validAdmin_InputMessage">
-    <wsdl:part name="parameters" element="tns:is_validAdmin" />
+  <wsdl:message name="IService1_CancelEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelEvent" />
   </wsdl:message>
-  <wsdl:message name="IService1_is_validAdmin_OutputMessage">
-    <wsdl:part name="parameters" element="tns:is_validAdminResponse" />
+  <wsdl:message name="IService1_CancelEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelEventResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_AddUser_InputMessage">
     <wsdl:part name="parameters" element="tns:AddUser" />
@@ -26,17 +26,17 @@
   <wsdl:message name="IService1_isvalid_OutputMessage">
     <wsdl:part name="parameters" element="tns:isvalidResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_CancelEvent_InputMessage">
-    <wsdl:part name="parameters" element="tns:CancelEvent" />
-  </wsdl:message>
-  <wsdl:message name="IService1_CancelEvent_OutputMessage">
-    <wsdl:part name="parameters" element="tns:CancelEventResponse" />
-  </wsdl:message>
   <wsdl:message name="IService1_AddImg_InputMessage">
     <wsdl:part name="parameters" element="tns:AddImg" />
   </wsdl:message>
   <wsdl:message name="IService1_AddImg_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddImgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchAll" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchAllResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetData_InputMessage">
     <wsdl:part name="parameters" element="tns:GetData" />
@@ -51,9 +51,9 @@
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="is_validAdmin">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/is_validAdmin" message="tns:IService1_is_validAdmin_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/is_validAdminResponse" message="tns:IService1_is_validAdmin_OutputMessage" />
+    <wsdl:operation name="CancelEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CancelEvent" message="tns:IService1_CancelEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CancelEventResponse" message="tns:IService1_CancelEvent_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="AddUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddUser" message="tns:IService1_AddUser_InputMessage" />
@@ -63,13 +63,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/isvalid" message="tns:IService1_isvalid_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/isvalidResponse" message="tns:IService1_isvalid_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="CancelEvent">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CancelEvent" message="tns:IService1_CancelEvent_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CancelEventResponse" message="tns:IService1_CancelEvent_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="AddImg">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddImg" message="tns:IService1_AddImg_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddImgResponse" message="tns:IService1_AddImg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchAll" message="tns:IService1_SearchAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchAllResponse" message="tns:IService1_SearchAll_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -82,8 +82,8 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="is_validAdmin">
-      <soap:operation soapAction="http://tempuri.org/IService1/is_validAdmin" style="document" />
+    <wsdl:operation name="CancelEvent">
+      <soap:operation soapAction="http://tempuri.org/IService1/CancelEvent" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -109,8 +109,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="CancelEvent">
-      <soap:operation soapAction="http://tempuri.org/IService1/CancelEvent" style="document" />
+    <wsdl:operation name="AddImg">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddImg" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -118,8 +118,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AddImg">
-      <soap:operation soapAction="http://tempuri.org/IService1/AddImg" style="document" />
+    <wsdl:operation name="SearchAll">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchAll" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

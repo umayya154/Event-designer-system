@@ -35,6 +35,7 @@
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             this.pictureBox2.Image = global::event_designer.Properties.Resources.images;
             this.pictureBox2.Location = new System.Drawing.Point(-2, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(586, 271);
+            this.pictureBox2.Size = new System.Drawing.Size(723, 256);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -102,7 +103,7 @@
             this.linkLabel7.AutoSize = true;
             this.linkLabel7.ForeColor = System.Drawing.Color.RoyalBlue;
             this.linkLabel7.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel7.Location = new System.Drawing.Point(462, 285);
+            this.linkLabel7.Location = new System.Drawing.Point(437, 285);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(71, 13);
             this.linkLabel7.TabIndex = 5;
@@ -125,10 +126,25 @@
             this.linkLabel8.VisitedLinkColor = System.Drawing.Color.Lime;
             this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.linkLabel9.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel9.Location = new System.Drawing.Point(539, 285);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(65, 13);
+            this.linkLabel9.TabIndex = 7;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "Admin Login";
+            this.linkLabel9.VisitedLinkColor = System.Drawing.Color.Lime;
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
+            // 
             // fmmain
             // 
             this.BackColor = System.Drawing.Color.Lime;
-            this.ClientSize = new System.Drawing.Size(584, 307);
+            this.ClientSize = new System.Drawing.Size(720, 307);
+            this.Controls.Add(this.linkLabel9);
             this.Controls.Add(this.linkLabel8);
             this.Controls.Add(this.linkLabel7);
             this.Controls.Add(this.linkLabel6);
@@ -156,5 +172,6 @@
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.LinkLabel linkLabel8;
+        private System.Windows.Forms.LinkLabel linkLabel9;
     }
 }

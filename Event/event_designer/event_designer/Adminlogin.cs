@@ -18,7 +18,7 @@ namespace event_designer
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*
             localhost.Service1 server = new localhost.Service1();
             bool is_validuser;
             bool is_validPassword;
@@ -37,7 +37,10 @@ namespace event_designer
             txtdc.Text = "";
             string name = txtadm.Text;
             string password = txtdp.Text;
-            string securitycode = txtdc.Text;
+            string securitycode = txtdc.Text;*/
+            Admin_Page a = new Admin_Page();
+            this.Hide();
+            a.Show();
 
            /* MessageBox.Show("Valid");
             string name = txtadm.Text;
