@@ -88,3 +88,4 @@ C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\
 C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.UserControl1.resources
 C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.UserCreateGallery.resources
 C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
+C:\Users\asim\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.ForgetPassword.resources

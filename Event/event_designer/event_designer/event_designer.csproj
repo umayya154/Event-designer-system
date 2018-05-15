@@ -140,6 +140,9 @@
     <EmbeddedResource Include="Cancel Event.resx">
       <DependentUpon>Cancel Event.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

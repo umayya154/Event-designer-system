@@ -89,9 +89,7 @@ namespace event_designer
 
         private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Admin_Page p = new Admin_Page();
-            this.Hide();
-            p.Show();
+           
         } 
     }
 }

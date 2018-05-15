@@ -37,7 +37,6 @@
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.linkLabel10 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,25 +155,10 @@
             this.linkLabel10.VisitedLinkColor = System.Drawing.Color.Lime;
             this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
-            // linkLabel11
-            // 
-            this.linkLabel11.AutoSize = true;
-            this.linkLabel11.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabel11.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel11.Location = new System.Drawing.Point(290, 258);
-            this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel11.TabIndex = 9;
-            this.linkLabel11.TabStop = true;
-            this.linkLabel11.Text = "Feedback";
-            this.linkLabel11.VisitedLinkColor = System.Drawing.Color.Lime;
-            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
-            // 
             // fmmain
             // 
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(720, 307);
-            this.Controls.Add(this.linkLabel11);
             this.Controls.Add(this.linkLabel10);
             this.Controls.Add(this.linkLabel9);
             this.Controls.Add(this.linkLabel8);
@@ -206,6 +190,5 @@
         private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.LinkLabel linkLabel9;
         private System.Windows.Forms.LinkLabel linkLabel10;
-        private System.Windows.Forms.LinkLabel linkLabel11;
     }
 }

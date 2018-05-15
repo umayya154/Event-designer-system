@@ -36,6 +36,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.linkmain = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtRp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // linkLabel2
@@ -62,6 +64,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
@@ -113,11 +116,29 @@
             this.linkLabel1.Text = "Forget Password";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 140);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Reset Password";
+            // 
+            // txtRp
+            // 
+            this.txtRp.Location = new System.Drawing.Point(163, 137);
+            this.txtRp.Name = "txtRp";
+            this.txtRp.Size = new System.Drawing.Size(72, 20);
+            this.txtRp.TabIndex = 10;
+            // 
             // fmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.txtRp);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkmain);
             this.Controls.Add(this.button1);
@@ -144,5 +165,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkmain;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtRp;
     }
 }

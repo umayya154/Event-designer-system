@@ -39,7 +39,8 @@ namespace event_designer
             localhost.Service1 server = new localhost.Service1();
             bool isvaliduser;
             bool isvalidPassword;
-            server.isvalid(textBox1.Text, textBox2.Text, out isvalidPassword, out isvaliduser);
+            
+            server.isvalid(textBox1.Text, textBox2.Text, out isvaliduser,out isvalidPassword);
             if (isvaliduser && isvalidPassword)
             {
                 MessageBox.Show("valid user");
@@ -68,6 +69,11 @@ namespace event_designer
             ForgetPassword fm = new ForgetPassword();
             this.Hide();
             fm.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
