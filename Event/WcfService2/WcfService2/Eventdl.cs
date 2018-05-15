@@ -8,20 +8,28 @@ namespace WcfService2
     public class Eventdl
     {
         public static List<Event> users = new List<Event>();
+        public static List<Event> cancel = new List<Event>();
         public List<Event> SearchAll()
         {
             return Eventdl.users;
         }
-
-        void AddEvent(string name, string dateofevent,string days, string usercode,string eventcode,string location,string guestquantity,string Payment){
+        public List<Event> SearchCancel()
+        {
+            return Eventdl.cancel;
+        }
+       public void AddEvent(string name, string dateofevent,string days, string usercode,string eventcode,string location,string guestquantity,string Payment)
+        {
             Event e = new Event();
-            e.Dateofevent = dateofevent;
-            e.Days = days;
-            e.Usercode = usercode;
-            e.Eventcode = eventcode;
             e.Location = location;
             e.Guestquantity = guestquantity;
             e.Payment = Payment;
+            e.Eventstatus = "Pending";
+          
+            e.Days = days;
+            e.Dateofevent = dateofevent;
+            e.Acode= usercode;
+            e.Eventcode = eventcode;
+            e.Aname = name;
             users.Add(e);
         }
         //void Conform(bool var);
@@ -29,16 +37,27 @@ namespace WcfService2
         {
             foreach (Event e in Eventdl.users)
             {
-                if ((e.Username == uname) && (e.Usercode == ucode))
+                if ((e.Aname == uname) && (e.Acode == ucode))
                 {
                     e.Eventstatus = "Cancel";
                     e.Cancelreason = udate + " " + ereason;
+                    cancel.Add(e);
                     return true;
                 }
             }
             return false;
         }
-        //Event Search(int eventcode);
+        public bool Search(string uname, string ucode)
+        {
+            foreach (Event e in Eventdl.users)
+            {
+                if ((e.Aname == uname) && (e.Acode == ucode))
+                {
+                   return true;
+                }
+            }
+            return false;
+        }
         
 
     }

@@ -233,11 +233,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(35, 257);
+            this.label14.Location = new System.Drawing.Point(12, 247);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(54, 13);
+            this.label14.Size = new System.Drawing.Size(122, 26);
             this.label14.TabIndex = 20;
-            this.label14.Text = "UserCode";
+            this.label14.Text = "UserCode\r\n(Remember  this code . )";
             // 
             // txtanswer
             // 
@@ -303,7 +303,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(42, 278);
+            this.label15.Location = new System.Drawing.Point(37, 282);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(30, 13);
             this.label15.TabIndex = 27;

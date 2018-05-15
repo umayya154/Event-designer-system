@@ -22,36 +22,35 @@ namespace WcfService2
             }
             return isFound;
         }
-       /* public bool is_validAdmin(string aname, string apassword, string acode)
-        {
-            bool isFound = false;
-            foreach (User b in Userdl.users)
-            {
-                if ((b.Username == aname) && (b.Password == apassword) &&(b.securitycode == acode))
-                {
-                    isFound = true;
-                }
-
-            }
-            return isFound;
-        }*/
+     
        public void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata)
         {
             User u = new User();
-            u.Username = uname;
-            u.Password = upassword;
-            u.Email = uemail;
-            u.ContactNo = ucontact;
+           
+           
             u.Area = uarea;
             u.SecretQs1 = uques;
             u.Answer = uans;
             u.Accountname = uacname;
             u.Accountno = uacno;
+            u.Email = uemail;
+            u.ContactNo = ucontact;
+            u.Password = upassword;
+            u.Username = uname;
             u.Usercode = ucode;
             u.Date = udata;
             users.Add(u);
         }
-        //public void DeleteUser(String username);
+       public void DeleteUser(string username, string usercode)
+       {
+           foreach(User u in Userdl.users)
+           {
+               if ((u.Username == username) && (u.Usercode == usercode))
+               {
+                   users.Remove(u);
+               }
+           }
+       }
         //public void DeleteUser(int usercode);
        public List<User> SearchAllUser()
        {

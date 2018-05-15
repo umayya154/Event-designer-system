@@ -36,15 +36,27 @@ namespace WcfService2
             return ed.SearchAll();
         }
         //public void Resetassword(string pass) { }
-        // public void AddEvent(Event e) { }
+        public void AddEvent(string name, string dateofevent, string days, string usercode, string eventcode, string location, string guestquantity, string Payment)
+         {
+             Eventdl e = new Eventdl();
+            e.AddEvent(name, dateofevent, days, usercode, eventcode, location, guestquantity, Payment);
+         }
         //public void Conform(bool var) { }
         public bool CancelEvent(string uname, string ucode, string udate, string ereason)
         {
             Eventdl ed = new Eventdl();
             return ed.CancelEvent(uname, ucode, udate, ereason);
         }
-        //public Event Search(int eventcode);
-        //public  void DeleteUser(string username) { }
+        public bool Search(string uname, string ucode)
+        {
+            Eventdl ed = new Eventdl();
+           return ed.Search(uname, ucode);
+        }
+        public  void DeleteUser(string username, string usercode) 
+        {
+            Userdl u = new Userdl();
+            u.DeleteUser(username, usercode);
+        }
         // public  void DeleteUser(int usercode) { }
         public List<User> SearchAllUser(){
             Userdl se = new Userdl();
@@ -57,6 +69,11 @@ namespace WcfService2
             Gallerydl g = new Gallerydl();
            
             g.AddImg(cata, code, img);
+        }
+        public List<Event> SearchCancel()
+        {
+            Eventdl ed = new Eventdl();
+            return ed.SearchCancel();
         }
  
         public string GetData(int value)

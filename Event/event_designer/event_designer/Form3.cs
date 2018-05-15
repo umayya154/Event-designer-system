@@ -78,6 +78,20 @@ namespace event_designer
             Adminlogin l = new Adminlogin();
             this.Hide();
             l.Show();
+        }
+
+        private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Feedback p = new Feedback();
+            this.Hide();
+            p.Show();
+        }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Admin_Page p = new Admin_Page();
+            this.Hide();
+            p.Show();
         } 
     }
 }

@@ -7,12 +7,12 @@ namespace WcfService2
 {
     public class Event
     {
-        private string username;
+        private string aname;
 
-        public string Username
+        public string Aname
         {
-            get { return username; }
-            set { username = value; }
+            get { return aname; }
+            set { aname = value; }
         }
         private string dateofevent;
 
@@ -35,12 +35,12 @@ namespace WcfService2
             get { return eventstatus; }
             set { eventstatus = value; }
         }
-        private string usercode;
+        private string acode;
 
-        public string Usercode
+        public string Acode
         {
-            get { return usercode; }
-            set { usercode = value; }
+            get { return acode; }
+            set { acode = value; }
         }
         private string eventcode;
 

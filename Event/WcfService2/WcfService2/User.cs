@@ -14,19 +14,12 @@ namespace WcfService2
             get { return username; }
             set { username = value; }
         }
-        private string SecretQs;
+        private string usercode;
 
-        public string SecretQs1
+        public string Usercode
         {
-            get { return SecretQs; }
-            set { SecretQs = value; }
-        }
-        private string answer;
-
-        public string Answer
-        {
-            get { return answer; }
-            set { answer = value; }
+            get { return usercode; }
+            set { usercode = value; }
         }
         private string contactNo;
 
@@ -42,6 +35,7 @@ namespace WcfService2
             get { return password; }
             set { password = value; }
         }
+
         private string email;
 
         public string Email
@@ -63,12 +57,20 @@ namespace WcfService2
             get { return date; }
             set { date = value; }
         }
-        private string usercode;
+      
+        private string SecretQs;
 
-        public string Usercode
+        public string SecretQs1
         {
-            get { return usercode; }
-            set { usercode = value; }
+            get { return SecretQs; }
+            set { SecretQs = value; }
+        }
+        private string answer;
+
+        public string Answer
+        {
+            get { return answer; }
+            set { answer = value; }
         }
         private string accountno;
 

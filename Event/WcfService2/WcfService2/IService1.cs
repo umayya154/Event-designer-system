@@ -15,13 +15,14 @@ namespace WcfService2
     {
         /* [OperationContract]
        void Resetassword();
-       [OperationContract]
-       void AddEvent(Event e);
+      
        [OperationContract]
        void Conform(bool var);
-       
-       [OperationContract]
-       Event Search(int eventcode);*/
+       */
+        [OperationContract]
+        bool Search(string uname, string ucode);
+        [OperationContract]
+        void AddEvent(string name, string dateofevent, string days, string usercode, string eventcode, string location, string guestquantity, string Payment);
        [OperationContract]
         bool is_validAdmin(string aname, string apassword, string acode);
         [OperationContract]
@@ -30,16 +31,18 @@ namespace WcfService2
         void AddUser(string uname, string upassword, string uemail, string ucontact, string uarea, string uques, string uans, string uacname, string uacno, string ucode, string udata);
         [OperationContract]
         bool isvalid(string uname, string password);
-        /*[OperationContract]
-         void DeleteUser(string username);
          [OperationContract]
+        List<Event> SearchCancel();
+        [OperationContract]
+         void DeleteUser(string username, string usercode);
+       /*  [OperationContract]
          void DeleteUser(int usercode);
          
          [OperationContract]
          User Searchuser(string Username);
         [OperationContract]
          void DellImg(int code);*/
-       [OperationContract]
+        [OperationContract]
         List<User> SearchAllUser();
          [OperationContract]
          void AddImg(string cata , string code, Image img);

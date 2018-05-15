@@ -38,6 +38,7 @@ namespace event_designer
             }
             txtadm.Text = "";
             txtdc.Text = "";
+            txtdp.Text = "";
             string name = txtadm.Text;
             string password = txtdp.Text;
             string securitycode = txtdc.Text;

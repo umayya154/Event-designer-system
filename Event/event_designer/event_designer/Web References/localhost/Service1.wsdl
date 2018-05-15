@@ -8,6 +8,18 @@
       <xsd:import schemaLocation="http://localhost:52757/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IService1_Search_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Search_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddEvent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddEventResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_is_validAdmin_InputMessage">
     <wsdl:part name="parameters" element="tns:is_validAdmin" />
   </wsdl:message>
@@ -31,6 +43,18 @@
   </wsdl:message>
   <wsdl:message name="IService1_isvalid_OutputMessage">
     <wsdl:part name="parameters" element="tns:isvalidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchCancel_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCancel" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchCancel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_SearchAllUser_InputMessage">
     <wsdl:part name="parameters" element="tns:SearchAllUser" />
@@ -63,6 +87,14 @@
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
+    <wsdl:operation name="Search">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Search" message="tns:IService1_Search_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchResponse" message="tns:IService1_Search_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddEvent" message="tns:IService1_AddEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddEventResponse" message="tns:IService1_AddEvent_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="is_validAdmin">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/is_validAdmin" message="tns:IService1_is_validAdmin_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/is_validAdminResponse" message="tns:IService1_is_validAdmin_OutputMessage" />
@@ -78,6 +110,14 @@
     <wsdl:operation name="isvalid">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/isvalid" message="tns:IService1_isvalid_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/isvalidResponse" message="tns:IService1_isvalid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCancel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchCancel" message="tns:IService1_SearchCancel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchCancelResponse" message="tns:IService1_SearchCancel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteUser" message="tns:IService1_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteUserResponse" message="tns:IService1_DeleteUser_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SearchAllUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchAllUser" message="tns:IService1_SearchAllUser_InputMessage" />
@@ -102,6 +142,24 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Search">
+      <soap:operation soapAction="http://tempuri.org/IService1/Search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEvent">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="is_validAdmin">
       <soap:operation soapAction="http://tempuri.org/IService1/is_validAdmin" style="document" />
       <wsdl:input>
@@ -131,6 +189,24 @@
     </wsdl:operation>
     <wsdl:operation name="isvalid">
       <soap:operation soapAction="http://tempuri.org/IService1/isvalid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCancel">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

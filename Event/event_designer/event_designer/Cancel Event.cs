@@ -19,16 +19,18 @@ namespace event_designer
 
         private void btncancel_Click(object sender, EventArgs e)
         {
-            bool isuname, isucode;
+            bool isuname = true   , isucode =  true;
             localhost.Service1 ser = new localhost.Service1();
             //CancelEvent(string uname, string ucode, string udate, string ereason)
             // MessageBox.Show("conformed or not", MessageBoxButtons.OKCancel);
-            DialogResult res = MessageBox.Show("Conformed...?");
+            DialogResult res = MessageBox.Show("Conformed...?", MessageBoxButtons.OKCancel.ToString());
             if (res == System.Windows.Forms.DialogResult.OK)
             {
                 ser.CancelEvent(txtuname.Text, txtucode.Text, txtedate.Text, txtereason.Text, out isuname, out isucode);
+               // ser.Search(txtuname, txtucode, out isuname, out isucode);
                 if (isucode && isuname)
                 {
+                    
                     MessageBox.Show(" Event is canceled");
                 }
                 else

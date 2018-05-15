@@ -62,5 +62,12 @@ namespace event_designer
             this.Hide();
             fm.Show();
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgetPassword fm = new ForgetPassword();
+            this.Hide();
+            fm.Show();
+        }
     }
 }

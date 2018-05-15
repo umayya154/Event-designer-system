@@ -39,6 +39,7 @@ namespace event_designer
             string location = txtloct.Text;
             string guestquantity = txtgq.Text;
             string Payment = txtpaym.Text;
+            service.AddEvent(name, dateofevent, days, usercode, eventcode, location, guestquantity, Payment);
             MessageBox.Show("Event has been booked");
         }
 
