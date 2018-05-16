@@ -140,6 +140,9 @@
     <EmbeddedResource Include="Cancel Event.resx">
       <DependentUpon>Cancel Event.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +210,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\localhost\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\localhost\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\localhost\User.datasource">

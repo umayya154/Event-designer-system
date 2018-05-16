@@ -35,6 +35,11 @@ namespace WcfService2
             Eventdl ed = new Eventdl();
             return ed.SearchAll();
         }
+        public List<string> fdbacklist()
+        {
+            Eventdl ed = new Eventdl();
+            return ed.fdbacklist();
+        }
         //public void Resetassword(string pass) { }
         public void AddEvent(string name, string dateofevent, string days, string usercode, string eventcode, string location, string guestquantity, string Payment)
          {
@@ -47,10 +52,10 @@ namespace WcfService2
             Eventdl ed = new Eventdl();
             return ed.CancelEvent(uname, ucode, udate, ereason);
         }
-        public bool Search(string uname, string ucode)
+        public bool Search(string uname, string fdback)
         {
             Eventdl ed = new Eventdl();
-           return ed.Search(uname, ucode);
+            return ed.Search(uname, fdback);
         }
         public  void DeleteUser(string username, string usercode) 
         {

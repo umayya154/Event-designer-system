@@ -45,20 +45,24 @@ namespace WcfService2
                     return true;
                 }
             }
-            return false;
+            return false; 
         }
-        public bool Search(string uname, string ucode)
+        public bool Search(string uname, string fdback)
         {
             foreach (Event e in Eventdl.users)
             {
-                if ((e.Aname == uname) && (e.Acode == ucode))
+                if ((e.Aname == uname))
                 {
+                    e.Feedback = fdback + DateTime.Now.ToLongDateString();
                    return true;
                 }
             }
             return false;
         }
-        
+        public List<string> fdbacklist()
+        {
+            return Eventdl.feedback;
+        }
 
     }
 }

@@ -20,7 +20,7 @@ namespace WcfService2
        void Conform(bool var);
        */
         [OperationContract]
-        bool Search(string uname, string ucode);
+        bool Search(string uname, string fdback);
         [OperationContract]
         void AddEvent(string name, string dateofevent, string days, string usercode, string eventcode, string location, string guestquantity, string Payment);
        [OperationContract]
@@ -42,6 +42,8 @@ namespace WcfService2
          User Searchuser(string Username);
         [OperationContract]
          void DellImg(int code);*/
+        [OperationContract]
+        List<string> fdbacklist();
         [OperationContract]
         List<User> SearchAllUser();
          [OperationContract]
