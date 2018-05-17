@@ -90,6 +90,14 @@ namespace event_designer
         private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
            
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BookedEvent p = new BookedEvent();
+            this.Hide();
+            p.Show();
+
         } 
     }
 }

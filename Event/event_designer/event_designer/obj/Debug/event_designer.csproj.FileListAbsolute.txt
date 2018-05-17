@@ -110,3 +110,6 @@ C:\Users\Alvina\Desktop\Event-designer-system\Event\event_designer\event_designe
 C:\Users\Alvina\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.UserCreateGallery.resources
 C:\Users\Alvina\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.csproj.GenerateResource.Cache
 C:\Users\Alvina\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.Feedback.resources
+C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.Feedback.resources
+C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.ForgetPassword.resources
+C:\Users\dell\Desktop\Event-designer-system\Event\event_designer\event_designer\obj\Debug\event_designer.BookedEvent.resources

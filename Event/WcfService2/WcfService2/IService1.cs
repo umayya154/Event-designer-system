@@ -13,7 +13,7 @@ namespace WcfService2
     [ServiceContract]
     public interface IService1
     {
-        /* [OperationContract]
+       /*  [OperationContract]
        void Resetassword();
       
        [OperationContract]
@@ -42,8 +42,8 @@ namespace WcfService2
          User Searchuser(string Username);
         [OperationContract]
          void DellImg(int code);*/
-        [OperationContract]
-        List<string> fdbacklist();
+         [OperationContract]
+        bool Chngpass(string uname, string uemail, string que, string ans, string passwd);
         [OperationContract]
         List<User> SearchAllUser();
          [OperationContract]

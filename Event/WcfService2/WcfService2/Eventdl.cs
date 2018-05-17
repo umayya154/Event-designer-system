@@ -59,10 +59,7 @@ namespace WcfService2
             }
             return false;
         }
-        public List<string> fdbacklist()
-        {
-            return Eventdl.feedback;
-        }
+       
 
     }
 }

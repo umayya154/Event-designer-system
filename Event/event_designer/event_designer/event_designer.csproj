@@ -58,6 +58,12 @@
     <Compile Include="Adminlogin.Designer.cs">
       <DependentUpon>Adminlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookedEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookedEvent.Designer.cs">
+      <DependentUpon>BookedEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cancel Event.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     <EmbeddedResource Include="Adminlogin.resx">
       <DependentUpon>Adminlogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookedEvent.resx">
+      <DependentUpon>BookedEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cancel Event.resx">
       <DependentUpon>Cancel Event.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,9 +219,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\localhost\Service12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\localhost\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\localhost\User.datasource">

@@ -41,15 +41,16 @@ namespace WcfService2
             u.Date = udata;
             users.Add(u);
         }
-       public void DeleteUser(string username, string usercode)
+       public void DeleteUser(User u)
        {
-           foreach(User u in Userdl.users)
-           {
-               if ((u.Username == username) && (u.Usercode == usercode))
-               {
+
+         //  foreach(User u in Userdl.users)
+          // {
+            //   if ((u.Username == username) && (u.Usercode == usercode))
+            //   {
                    users.Remove(u);
-               }
-           }
+             //  }
+        //   }
        }
         //public void DeleteUser(int usercode);
        public List<User> SearchAllUser()

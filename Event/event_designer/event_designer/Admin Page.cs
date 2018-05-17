@@ -70,11 +70,11 @@ namespace event_designer
         private void button6_Click(object sender, EventArgs e)
         {
             localhost.Service1 ser = new localhost.Service1();
-           // ser.DeleteUser(txtname.Text, txtcode.Text);
-            BindingSource source = new BindingSource();
-            ser.SearchAllUser();
-            source.DataSource = ser.SearchAllUser();
-            dataGridView1.DataSource = source;
+            ser.DeleteUser(txtname.Text, txtcode.Text);
+           // BindingSource source = new BindingSource();
+          //  ser.SearchAllUser();
+          //  source.DataSource = ser.SearchAllUser();
+          //  dataGridView1.DataSource = source;
         }
     }
 }

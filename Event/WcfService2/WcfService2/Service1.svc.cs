@@ -35,11 +35,7 @@ namespace WcfService2
             Eventdl ed = new Eventdl();
             return ed.SearchAll();
         }
-        public List<string> fdbacklist()
-        {
-            Eventdl ed = new Eventdl();
-            return ed.fdbacklist();
-        }
+      
         //public void Resetassword(string pass) { }
         public void AddEvent(string name, string dateofevent, string days, string usercode, string eventcode, string location, string guestquantity, string Payment)
          {
@@ -59,13 +55,31 @@ namespace WcfService2
         }
         public  void DeleteUser(string username, string usercode) 
         {
-            Userdl u = new Userdl();
-            u.DeleteUser(username, usercode);
+            Userdl ud = new Userdl();
+            foreach (User u in Userdl.users.ToArray())
+            {
+                if ((u.Username == username) && (u.Usercode == usercode))
+                {
+                    ud.DeleteUser(u);
+                }
+            }
         }
         // public  void DeleteUser(int usercode) { }
         public List<User> SearchAllUser(){
             Userdl se = new Userdl();
             return se.SearchAllUser();
+        }
+        public bool Chngpass(string uname, string uemail, string que, string ans, string passwd)
+        {
+            foreach (User u in Userdl.users)
+            {
+                if ((u.Username == uname) && (u.Email == uemail) && (u.SecretQs1 == que) && (u.Answer == ans))
+                {
+                    u.Password = passwd;
+                    return true;
+                }
+            }
+            return false;
         }
         //public User Searchuser(string Username){}
         //public void DellImg(int code) { }

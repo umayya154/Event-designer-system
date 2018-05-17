@@ -27,7 +27,6 @@ namespace event_designer
         private void button1_Click(object sender, EventArgs e)
         {
             bool isname, isuser;
-            int row = 0;
             localhost.Service1 ser = new localhost.Service1();
             ser.Search(textBox1.Text, textBox3.Text, out isname , out isuser);
             BindingSource b=new BindingSource();
@@ -48,12 +47,12 @@ namespace event_designer
         }
       
         private void Feedback_Load(object sender, EventArgs e)
-        {
+        {/*
             localhost.Service1 service = new localhost.Service1();
             BindingSource source = new BindingSource();
             source.DataSource = service.SearchAll();
             dataGridView1.DataSource = source;
-
+            */
         
         }
 
